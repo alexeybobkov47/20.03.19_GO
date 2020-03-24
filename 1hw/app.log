@@ -1,0 +1,5 @@
+2020/03/22 18:23:18 Тест
+2020/03/22 18:23:18 start listen on port 8080
+2020/03/22 18:23:30 delete from Site.Post WHERE Site.Post.id =16
+2020/03/22 18:23:34 delete from Site.Post WHERE Site.Post.id =29
+2020/03/22 18:23:38 insert into Site.Post (header, text) values ('111111111','11111111111111');

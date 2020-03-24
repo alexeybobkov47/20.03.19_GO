@@ -1,0 +1,37 @@
+{{define "blog"}}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <link rel="stylesheet" type="text/css" href="styles/style.css"> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{.Name}}</title>
+
+</head>
+
+<body>
+    <div class="layout">
+        <div class="header">
+            <h1>{{.Name}}</h1>
+            <h3>{{.Description}}</h3>
+        </div>
+        <div class="posts">
+            {{range .Posts}}
+            <div class="post" id="{{.ID}}">
+                <a href="blog/{{.ID}}">
+                    <h5>{{.Header}}</h5>
+                </a>
+                <p>{{.Text}}</p>
+                <a href="blog/edit/{{.ID}}">Редактировать</a>
+            </div>
+            {{end}}
+        </div>
+
+    </div>
+    <a href="blog/newpost">Новый пост</a>
+</body>
+
+</html>
+{{end}}
