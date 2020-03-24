@@ -1,0 +1,5 @@
+{
+    "db_link": "root:12345@tcp(192.168.0.39:3306)/Site?charset=utf8",
+    "log_file": "app.log",
+    "port": "8080"
+}
